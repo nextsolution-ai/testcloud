@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voiceflow Chat</title>
+  <title>vf host</title>
 </head>
 <body style="
   background: linear-gradient(135deg, #000000, #1b1818);
@@ -26,7 +26,7 @@
     WaitingAnimationExtension,
     DoneAnimationExtension,
     DisableInputExtension,
-  } from "https://chatlabsextension.github.io/malou/extensions.js";
+  } from "https://testcloud-9gj.pages.dev/extensions.js";
 
   (function (d, t) {
     var v = d.createElement(t),
@@ -48,7 +48,7 @@
         },
         assistant: {
           stylesheet:
-            "https://chatlabsextension.github.io/malou/style-bot.css",
+            "https://testcloud-9gj.pages.dev/style-bot.css",
           persistence: "memory",
           extensions: [
             BrowserDataExtension,
@@ -58,29 +58,13 @@
           ],
         },
       }).then(() => {
-        window.voiceflow.chat.proactive.clear(); 
-        window.voiceflow.chat.proactive.push(
-          { 
-            type: 'text', 
-            payload: { message: 'Hej!👋 Funderar du över något?' } 
-          },
-          { 
-            type: 'text', 
-            payload: { message: 'Skriv din fråga här så får du svar omedelbums!😊' } 
-          }
-        );
-        if (window.location.href === "WWWWWWW") {
-          setTimeout(function () {
-            window.voiceflow.chat.open();
-          }, 1000);
-        }
+        window.voiceflow.chat.proactive.clear();
       });
     };
-    v.src = "https://chatlabsextension.github.io/malou/bundle.mjs";
+    v.src = "https://testcloud-9gj.pages.dev/bundle.mjs";
     v.type = "text/javascript";
     s.parentNode.insertBefore(v, s);
   })(document, "script");
 </script>
-
 </body>
 </html>
