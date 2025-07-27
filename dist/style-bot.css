@@ -1,0 +1,156 @@
+.vfrc-message--extension-OpenAIAssistantsV2 {
+  color: #1a1e23;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  min-height: 41px;
+  min-width: 64px;
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 1px 16px 1px;
+}
+
+.vfrc-message--extension-OpenAIAssistantsV2  img {
+  max-width: 100%;
+  display: block;
+  margin: 10px 0;
+}
+  
+.response-container h1,
+.response-container h2,
+.response-container h3,
+.response-container h4,
+.response-container h5,
+.response-container h6 {
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.response-container h2,
+.response-container h3,
+.response-container h4,
+.response-container h5,
+.response-container h6 {
+  font-size: 14px;
+}
+.response-container hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.response-container ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 20px;
+  unicode-bidi: isolate;
+}
+.response-container ul {
+  list-style-type: disc;
+  padding-inline-start: 27px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  position: relative;
+}
+.response-container ul li::marker {
+  content: "";
+}
+.response-container ul li:before {
+  content: "";
+  height: 4px;
+  width: 4px;
+  background-color: #1a1e23;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-14px, 7px);
+}
+.response-container .task-list-item {
+  display: flex;
+  align-items: flex-start;
+}
+.response-container input[type="checkbox"] {
+  transform: translateY(3px);
+  margin-right: 8px;
+}
+.response-container li {
+  margin: 8px 0;
+  position: relative;
+}
+.response-container ol {
+  margin-left: 8px;
+}
+.response-container li p {
+  line-height: 1.5;
+}
+.response-container a {
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+  color: #397dff;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+.response-container a:hover {
+  text-decoration-color: #397dff;
+}
+.response-container a:active {
+  color: #2f68db;
+  text-decoration-color: transparent;
+}
+
+.ugfae40 {
+  pointer-events: none;
+}
+
+.jyiuei4::after {
+  content: "Chatlabs"; 
+  color: rgb(255, 255, 255); 
+  position: absolute;
+  left: 0;
+}
+
+.jyiuei4 {
+  display: inline-block;  
+  overflow: visible; 
+  color: transparent; 
+  position: relative;
+}
+
+.vfrc-message--extension-OpenAIResponseExtension {
+  color: #1a1e23;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  min-height: 41px;
+  min-width: 64px;
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 1px 16px 1px;
+}
+
+.vfrc-message--extension-OpenAIResponseExtension  img {
+  max-width: 100%;
+  display: block;
+  margin: 10px 0;
+}
+
+._1ayyscc1 {
+  background-color: transparent;
+}
+
+._1xyscpy0 {
+    background-color: white;
+    border-radius: 10%;
+}
+
+.s9t60i0 {
+    background-color: transparent;
+}
