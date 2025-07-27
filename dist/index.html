@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voiceflow Chat</title>
+</head>
+<body style="
+  background: linear-gradient(135deg, #000000, #1b1818);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+">
+
+<style>
+  #voiceflow-chat {
+    display: block !important;
+    font-family: 'Open Sans', sans-serif;
+  }
+</style>
+<script type="module">
+  import {
+    BrowserDataExtension,
+    WaitingAnimationExtension,
+    DoneAnimationExtension,
+    DisableInputExtension,
+  } from "https://chatlabsextension.github.io/malou/extensions.js";
+
+  (function (d, t) {
+    var v = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    v.onload = function () {
+      window.voiceflow.chat.load({
+        verify: { projectID: "6821b58b97a9ce1e0eaa8768" },
+        url: "https://general-runtime.voiceflow.com",
+        versionID: "production",
+        launch: {
+          event: {
+            type: "launch",
+            payload: {
+              currentURL: window.location.href,
+              currentTime: new Date().toISOString(),
+              userLanguage: navigator.language || navigator.userLanguage,
+            },
+          },
+        },
+        assistant: {
+          stylesheet:
+            "https://chatlabsextension.github.io/malou/style-bot.css",
+          persistence: "memory",
+          extensions: [
+            BrowserDataExtension,
+            WaitingAnimationExtension,
+            DoneAnimationExtension,
+            DisableInputExtension,
+          ],
+        },
+      }).then(() => {
+        window.voiceflow.chat.proactive.clear(); 
+        window.voiceflow.chat.proactive.push(
+          { 
+            type: 'text', 
+            payload: { message: 'Hej!👋 Funderar du över något?' } 
+          },
+          { 
+            type: 'text', 
+            payload: { message: 'Skriv din fråga här så får du svar omedelbums!😊' } 
+          }
+        );
+        if (window.location.href === "WWWWWWW") {
+          setTimeout(function () {
+            window.voiceflow.chat.open();
+          }, 1000);
+        }
+      });
+    };
+    v.src = "https://chatlabsextension.github.io/malou/bundle.mjs";
+    v.type = "text/javascript";
+    s.parentNode.insertBefore(v, s);
+  })(document, "script");
+</script>
+
+</body>
+</html>
